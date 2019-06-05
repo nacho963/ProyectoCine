@@ -11,24 +11,22 @@ $grey: #5f5f5f;
   font-family: $font;
 }
 
-body{
-    background-color: black;
-}
 
 h1{
-    color:white;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    color: black;
 }
 hr{
     background-color: white;
 }
 
+ 
 
 
 #crud{
     align-items: center;
     position: relative;
-    left:8%;
-    top: 300px;
+    top: 10px;
 }
 
 #titulo{
@@ -59,3 +57,169 @@ hr{
     top: 140px;
     align-content: center;
 }
+
+.btn {
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 17px 39px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    text-transform: uppercase;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a7ce2+0,8283e8+50,5c5de8+51,565bd8+71,575cdb+100 */
+    background: #5a7ce2;
+   /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5a7ce2 0%, #8283e8 50%, #5c5de8 51%, #565bd8 71%, #575cdb 100%);
+   /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5a7ce2 0%,#8283e8 50%,#5c5de8 51%,#565bd8 71%,#575cdb 100%);
+   /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5a7ce2 0%,#8283e8 50%,#5c5de8 51%,#565bd8 71%,#575cdb 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a7ce2', endColorstr='#575cdb',GradientType=1 );
+   /* IE6-9 fallback on horizontal gradient */
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    border: medium none;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{
+       background-position:0% 31%
+   }
+    50%{
+       background-position:100% 70%
+   }
+    100%{
+       background-position:0% 31%
+   }
+}
+@-moz-keyframes AnimationName {
+    0%{
+       background-position:0% 31%
+   }
+    50%{
+       background-position:100% 70%
+   }
+    100%{
+       background-position:0% 31%
+   }
+}
+@keyframes AnimationName {
+    0%{
+       background-position:0% 31%
+   }
+    50%{
+       background-position:100% 70%
+   }
+    100%{
+       background-position:0% 31%
+   }
+}
+
+
+.section-box-two{
+    height: 340px;
+    width: 220px;
+    top: 5%;
+    left: -40%;
+    background: radial-gradient(#6e6e6e,#2f2f2f);
+    background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
+    background: -moz-radial-gradient(#6e6e6e,#2f2f2f);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
+
+.section-box-two img{
+    top:0px;
+    left:-4px;
+    height: 100%;
+    position: absolute;
+    transition: ease-in-out .5s;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+}
+.section-box-two:hover img{
+    transform: translate(-100%, -100%);
+    -webkit-transform: translate(-100%, -100%);
+    -moz-transform: translate(-100%, -100%);
+}
+body{
+    background: #282828;
+    padding: 0;
+    margin: 0;
+  }
+  #container{
+    margin:0;
+    padding:0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 67%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  polygon {
+    fill-opacity: 1;
+    -webkit-transition: all 0.1s linear;
+  }
+
+  polygon:hover{
+    fill-opacity: 0.7;
+  }
+
+  .over {
+    -webkit-animation: demo 3s;
+    -moz-animation:    demo 3s;
+    -o-animation:      demo 3s;
+    animation:         demo 3s;
+  }
+
+  @keyframes demo {
+     0% {fill-opacity:1;}
+     50% {fill-opacity:0.7;}
+     100% {fill-opacity:1;}
+  }
+
+  @-moz-keyframes demo { /* Firefox */
+     0% {fill-opacity:1;}
+     50% {fill-opacity:0.7;}
+     100% {fill-opacity:1;}
+  }
+
+  @-webkit-keyframes demo { /* Safari and Chrome */
+     0% {fill-opacity:1;}
+     50% {fill-opacity:0.7;}
+     100% {fill-opacity:1;}
+  }
+
+  @-o-keyframes demo { /* Opera */
+     0% {fill-opacity:1;}
+     50% {fill-opacity:0.7;}
+     100% {fill-opacity:1;}
+  }
+
+  path {
+    -webkit-transition: all 0.1s linear;
+  }
+
+  path:hover{
+    fill: #444;
+  }

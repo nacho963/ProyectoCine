@@ -5,13 +5,24 @@ const personaController = require("../../controllers/personacontroller");
 router.get("/", (req, res) => {
   res.render("Home", { title: "Home" });
 });
-
+router.get("/taquilla", (req,res)=>{
+  res.render("taquilla", {title:"Taquilla"});
+});
+router.get("/Carameleria", (req,res)=>{
+  res.render("carameleria", {title:"Carameleria"});
+});
+router.get("/Gerente", (req,res)=>{
+  res.render("gerente", {title:"Gerente"});
+});
+router.get("/Jefe", (req,res)=>{
+  res.render("jefe", {title:"Jefe"});
+});
 router.get("/Create", (req,res)=>{
-  res.render("create", {title:'Create'});
+  res.render("create", {title:"Create"});
 });
 
 router.post("/Crud/Create" ,(req,res)=>{
-  
+  console.log(req.body);
   personaController.CreatePersona(req.body);
   res.redirect('/');
 });
