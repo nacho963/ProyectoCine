@@ -8,6 +8,27 @@ router.get("/", (req, res) => {
 router.get("/taquilla", (req,res)=>{
   res.render("taquilla", {title:"Taquilla"});
 });
+router.get("/GFunciones", (req,res)=>{
+  res.render("gFunciones", {title:"Gestion de Funciones"});
+});
+router.get("/GMantenimiento", (req,res)=>{
+  res.render("gMantenimiento", {title:"Gestion de Mantenimiento"});
+});
+router.get("/CSede", (req,res)=>{
+  res.render("cSede", {title:"Crear Sede"});
+});
+router.get("/CSala", (req,res)=>{
+  res.render("cSala", {title:"Crear Sala"});
+});
+router.get("/Combos", (req,res)=>{
+  res.render("combos", {title:"Combos"});
+});
+router.get("/ServicioButaca", (req,res)=>{
+  res.render("servicioButaca", {title:"Servicio a Butaca"});
+});
+router.get("/Productos", (req,res)=>{
+  res.render("productos", {title:"Productos"});
+});
 router.get("/Carameleria", (req,res)=>{
   res.render("carameleria", {title:"Carameleria"});
 });
@@ -18,7 +39,7 @@ router.get("/Jefe", (req,res)=>{
   res.render("jefe", {title:"Jefe"});
 });
 router.get("/Create", (req,res)=>{
-  res.render("create", {title:"Create"});
+  res.render("CRUD/create", {title:"Create"});
 });
 
 router.post("/Crud/Create" ,(req,res)=>{

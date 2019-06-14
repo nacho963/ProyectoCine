@@ -90,6 +90,22 @@ hr{
     border: medium none;
 }
 
+.btn.active span.nonCheckBoxAllow {
+  display: none;
+}
+
+.btn.active span.checkBoxAllow {
+  display: inline;
+}
+
+.btn span.nonCheckBoxAllow {
+  display: inline;
+}
+
+.btn span.checkBoxAllow {
+  display: none;
+}
+
 @-webkit-keyframes AnimationName {
     0%{
        background-position:0% 31%
@@ -164,9 +180,42 @@ body{
     display: inline-block;
     position: relative;
     width: 100%;
-    padding-bottom: 67%;
+    
     vertical-align: middle;
     overflow: hidden;
+  }
+
+  figure {    
+    .img-bg {
+      display: block;
+      position:absolute;
+      clip:rect(0,1550px,700px,0);
+      width: 100%;
+      padding-bottom: 0;
+      
+      background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+      }
+    }
+    
+    figcaption {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      margin: auto;
+      transform: translateY(-50%);
+      
+      text-align: center;
+      color: white;
+    }
+  }
+  
+  body {
+    font-family: arial, sans-serif;
   }
 
   .svg-content {
