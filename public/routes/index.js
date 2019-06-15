@@ -8,8 +8,14 @@ router.get("/", (req, res) => {
 router.get("/taquilla", (req,res)=>{
   res.render("taquilla", {title:"Taquilla"});
 });
+router.get("/GFunciones2", (req,res)=>{
+  res.render("gFunciones2", {title:"Eliminar Funciones"});
+});
+router.get("/GFunciones3", (req,res)=>{
+  res.render("gFunciones3", {title:"Crear Funciones"});
+});
 router.get("/GFunciones", (req,res)=>{
-  res.render("gFunciones", {title:"Gestion de Funciones"});
+  res.render("gFunciones", {title:"Crear Peliculas"});
 });
 router.get("/GMantenimiento", (req,res)=>{
   res.render("gMantenimiento", {title:"Gestion de Mantenimiento"});

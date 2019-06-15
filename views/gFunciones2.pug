@@ -1,0 +1,32 @@
+extends layout
+
+block content
+ .col-sm-9#form
+        h4(style="text-align:center; color:white;") Formulario para crear una Función
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Create" )
+                    .row
+                        .col-sm-3
+                         div(class="form-group")
+                            label(for="filter") Sala
+                            select(class="form-control")
+                                option(value="Normal", selected) 1
+                                option(value="Premium") 2...
+                        .col-sm-3
+                         div(class="form-group")
+                            label(for="filter") Pelicula
+                            select(class="form-control")
+                                option(value="Normal", selected) 1
+                                option(value="Premium") 2...
+                        .col-sm-3
+                            label Dia de la funcion
+                            br
+                            input(class="form-control", name="registration_date", id="registration-date", type="date")   
+                        .col-sm-3
+                            label Horario de la funcion
+                            br
+                            input(class="form-control", name="registration_time", id="registration-time", type="time") 
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Eliminar

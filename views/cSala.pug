@@ -7,7 +7,17 @@ block content
         .card
             .card-body
                 form(method="POST", action="/Crud/Create" )
-                    .row
+                    .row                        
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Ubicacion de la see
+                                    select(class="form-control")
+                                        option(value="Normal", selected) Normal
+                                        option(value="Premium") Premium
+                        .col-sm-4
+                            label Numero de sala
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")      
                         .col-sm-4
                             div(class="form-group")
                                     label(for="filter") Tipo de Sala
@@ -27,21 +37,21 @@ block content
                                     select(class="form-control")
                                         option(value="1", selected) 1
                                         option(value="2") 2
-                        .col-sm-3
+                        .col-sm-4
                             div(class="form-group")
                                     label(for="filter") Cantidad de Salidas
                                     select(class="form-control")
                                         option(value="1", selected) 1
                                         option(value="2") 2
-                        .col-sm-3
+                        .col-sm-4
                             label Cantidad de Asientos
                             br
                             input(type="text", name="asientos", id="asientos", class="form-control")                
-                        .col-sm-3
+                        .col-sm-4
                             label Cantidad de Filas az
                             br
                             input(type="text", name="filas", id="filas", class="form-control", placeholder="A-Z")
-                        .col-sm-3
+                        .col-sm-4
                             label Cantidad de Columnas
                             br
                             input(type="text", name="columnas", id="columnas", class="form-control", placeholder="1-100")

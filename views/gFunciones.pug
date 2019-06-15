@@ -1,3 +1,40 @@
 extends layout
 
 block content
+ .col-sm-9#form
+        h4(style="text-align:center; color:white;") Formulario para crear una pelicula
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Create" )
+                    .row
+                        .col-sm-4
+                            label Titulo
+                            br
+                            input(type="text", name="nombre", id="nombre", class="form-control")    
+                        .col-sm-8
+                            label Descripcion
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")    
+                        .col-sm-4
+                            label Genero
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")    
+                        .col-sm-4
+                            label Fecha de estreno
+                            br
+                            input(class="form-control", name="registration_date", id="registration-date", type="date")
+                        .col-sm-4
+                            label Duración
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")              
+                        .col-sm-6
+                            label Idioma Pelicula
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")    
+                        .col-sm-6
+                            label Nivel de Censura
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")    
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Guardar
