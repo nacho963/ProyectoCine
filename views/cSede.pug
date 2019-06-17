@@ -1,0 +1,32 @@
+extends layout
+
+block content
+
+    .col-sm-9#form
+        h3#text(style="text-align:center; color:white;") Formulario para crear una Sede
+        hr
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Sede/Crear" )
+                    .row
+                        .col-sm-3
+                            label Rif
+                            br
+                            input(type="text", name="rif", id="nombre", class="form-control")
+                        .col-sm-3
+                            label Ubicacion
+                            br
+                            input(type="text", name="ubicacion", id="apellido", class="form-control")
+                        .col-sm-3
+                            label Horario de entrada
+                            br
+                            input(class="form-control", name="horaEntrada", id="registration-time", type="time")
+                        .col-sm-3
+                            label Horario Salida
+                            br
+                            input(class="form-control", name="horaSalida", id="registration-time", type="time")
+                            input(class="form-control", name="cantidadSalas", id="registration-time", type="hidden", value="0")
+
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Crear

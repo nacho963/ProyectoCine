@@ -1,0 +1,18 @@
+//- Test markup for helper 
+//- How to make image accessible for crawlers and use 'background-size: cover' using one html `img` tag
+mixin img-bg(src, alt)
+ img.img-bg(
+   src=src,
+   style=`background-image: url('${src}')`,
+   alt=alt
+  )&attributes(attributes)
+ 
+figure
+  +img-bg(
+    "https://images.unsplash.com/photo-1543494407-bc4186ac7453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80", 
+    "image"
+  )(class="additional-class")
+  
+  figcaption 
+  
+  

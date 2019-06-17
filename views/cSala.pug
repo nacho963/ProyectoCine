@@ -1,0 +1,88 @@
+extends layout
+
+block content
+ .col-sm-9#form
+        h4(style="text-align:center; color:white;") Formulario para crear una sala
+        br
+        .card
+            .card-body
+                form(method="POST", action="/Crud/Create" )
+                    .row                        
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Ubicacion de la see
+                                    select(class="form-control")
+                                        option(value="Normal", selected) Normal
+                                        option(value="Premium") Premium
+                        .col-sm-4
+                            label Numero de sala
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")      
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Tipo de Sala
+                                    select(class="form-control")
+                                        option(value="Normal", selected) Normal
+                                        option(value="Premium") Premium
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Tipo de Reproducción
+                                    select(class="form-control")
+                                        option(value="Ambos", selected) Ambos
+                                        option(value="2D") 2D
+                                        option(value="3D") 3D
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Cantidad de Entradas
+                                    select(class="form-control")
+                                        option(value="1", selected) 1
+                                        option(value="2") 2
+                        .col-sm-4
+                            div(class="form-group")
+                                    label(for="filter") Cantidad de Salidas
+                                    select(class="form-control")
+                                        option(value="1", selected) 1
+                                        option(value="2") 2
+                        .col-sm-4
+                            label Cantidad de Asientos
+                            br
+                            input(type="text", name="asientos", id="asientos", class="form-control")                
+                        .col-sm-4
+                            label Cantidad de Filas az
+                            br
+                            input(type="text", name="filas", id="filas", class="form-control", placeholder="A-Z")
+                        .col-sm-4
+                            label Cantidad de Columnas
+                            br
+                            input(type="text", name="columnas", id="columnas", class="form-control", placeholder="1-100")
+                        .col-sm-4
+                                br
+                                br
+                                label Izquierda
+                                br
+                                label
+                                    input(type="checkbox", autocomplete="off")
+                                    span(class="glyphicon glyphicon-ok")
+                        .col-sm-4
+                                br
+                                label Pasillos
+                                br
+                                label Centro
+                                br
+                                label
+                                    input(type="checkbox", autocomplete="off")
+                                    span(class="glyphicon glyphicon-ok")
+                        .col-sm-4
+                                br
+                                br
+                                label Derecha
+                                br
+                                label
+                                    input(type="checkbox", autocomplete="off")
+                                    span(class="glyphicon glyphicon-ok")
+                    br
+                    button.btn.btn-primary.btn-lg(type="submit", style="position:relative; left:45%;" ) Guardar
+
+
+
+

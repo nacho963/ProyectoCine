@@ -1,0 +1,18 @@
+mixin navbar()
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href="/") Cines Muralla
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-ico
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.mr-auto
+            ul.navbar-nav.float-right
+                li.nav-item
+                    a.nav-link(href="/") Inicio <span class="sr-only">(current)</span>
+                li.nav-item
+                    a.nav-link(href="/Taquilla") Taquilla
+                li.nav-item
+                    a.nav-link#prepa(href="/Carameleria") Carameleria
+                    li.nav-item
+                    a.nav-link#prepa(href="/Gerente") Gerente
+                    li.nav-item
+                    a.nav-link#prepa(href="/Jefe") Jefe
