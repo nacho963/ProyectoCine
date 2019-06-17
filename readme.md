@@ -13,18 +13,3 @@ $ cd express-sql-template
 $ npm install
 $ mv varibales.env.example variables.env
 $ npm start
-```
-### Encontraste algo o quieres contribuir / Find a Typo or Wanna contributed
-
-Por favor, crear un pull request o llena un Issue.
-Please feel free to make a pull request, or filled an Issue.
-
-#### No funciona / Not working
-
- - Revisa la el archivos variables.env y asegurate que los parametros de la DB sean correctos
- - Revisa que tiene las dependencias installadas.
- - Enviame un tweet [@quevedodev](https://twitter.com/quevedodev)
- - Take a look at config params on variables.env
- - Make sure you have all the dependencies install correctly
- - Tweet me [@quevedodev](https://twitter.com/quevedodev)
-
